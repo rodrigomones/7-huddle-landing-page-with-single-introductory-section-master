@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", "Open Sans", sans-serif;
+  background: url("../images/bg-mobile.svg") no-repeat;
+  background-size: 100%;
+  background-color: var(--violet);
+  margin: 0;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* ----logo---- */
+.logo {
+  padding: 30px 40px;
+}
+.logo img {
+  width: 45%;
+}
+.container {
+  display: grid;
+}
+.illustration {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.text {
+  text-align: center;
+  padding: 35px;
+  color: white;
+  font-family: "Open Sans";
+}
+h2 {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+p {
+  padding-bottom: 20px;
+}
+.btn {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 80%;
+  color: var(--violet);
+  font-family: "Poppins";
+  box-shadow: 0px 10px 25px rgba(11, 13, 14, 0.3);
+}
+.social {
+  display: flex;
+  padding: 0 30%;
+  padding-top: 40px;
+}
+
+.links {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.links img {
+  width: 50%;
+  filter: invert(100%);
+}
+
+/* ----attribution---- */
+.attribution {
+  padding: 0;
+  padding-top: 40px;
+  margin: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 780px) {
+  body {
+    max-width: 1440px;
+    padding: 15px 70px;
+    background: url("../images/bg-desktop.svg") no-repeat;
+    background-color: var(--violet);
+  }
+  .logo {
+    width: 40%;
+    padding-bottom: 90px;
+  }
+  .container {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+  .text {
+    padding: 0;
+    text-align: left;
+  }
+  .illustration {
+    width: 100%;
+    padding-top: 0;
+  }
+  h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-right: 120px;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding-right: 100px;
+  }
+  .btn {
+    width: 33%;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  .btn:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+    cursor: pointer;
+  }
+  .social {
+    padding: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+  }
+  .links {
+    margin: 10px;
+  }
+  .links:hover {
+    filter: invert(100%);
+  }
+
+  .attribution {
+    position: fixed;
+  }
+}
